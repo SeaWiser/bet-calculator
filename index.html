@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <title>Calculateur de mise</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="text-center mb-4">Calculateur de mise (Kelly)</h1>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="bankroll">Bankroll (capital)</label>
+          <input type="number" class="form-control" id="bankroll" step="any" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cote">Côte</label>
+          <input type="number" class="form-control" id="cote" step="any" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cote">Résultat (€)</label>
+          <input
+            type="number"
+            class="form-control"
+            id="result"
+            step="any"
+            disabled
+          />
+        </div>
+      </div>
+      <button class="btn btn-primary" onclick="calculerMise()">Calculer</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
